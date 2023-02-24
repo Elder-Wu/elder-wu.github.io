@@ -1,4 +1,8 @@
 (function () {
+    // 检测屏幕宽度，如果屏幕宽度小于768px，就不再添加video标签
+    if (window.innerWidth <= 768) { 
+        return;
+    };
 
     // 获取父元素
     var containerElement = document.getElementById('page-header');
@@ -13,12 +17,13 @@
     if (bgImage == null) return;
     // console.log(bgImage)
 
-    if (bgImage.includes("qingdao")) {
-        createVideoElement(containerElement, "https://oss.noname.casa/file/nonameoss/output.mp4");
+    if (bgImage.includes("boat.webp")) {
+        createVideoElement(containerElement, "https://oss.noname.casa/file/nonameoss/boat.mp4");
     }
 
-    if (bgImage.includes("sea.jpg")) {
-        createVideoElement(containerElement, "https://oss.noname.casa/file/nonameoss/blog_index_video.mp4");
+    if (bgImage.includes("sea.webp")) {
+        // createVideoElement(containerElement, "https://oss.noname.casa/file/nonameoss/blog_index_video.mp4");
+        createVideoElement(containerElement, "https://oss.noname.casa/file/nonameoss/sea.mp4");
     }
 
     function createVideoElement(containerElement, videoUrl) {
