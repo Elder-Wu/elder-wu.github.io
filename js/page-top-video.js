@@ -1,6 +1,6 @@
 (function () {
     // 检测屏幕宽度，如果屏幕宽度小于768px，就不再添加video标签
-    if (window.innerWidth <= 768) { 
+    if (window.innerWidth <= 1000) { 
         return;
     };
 
