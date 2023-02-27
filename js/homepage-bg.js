@@ -10,6 +10,8 @@ function addBg() {
     const headerContainer = document.getElementById("page-header")
     if (headerContainer == null) return;
 
+    if (headerContainer.querySelector('canvas') != null) return;
+
     let wndowInnerHeight = headerContainer.clientHeight
 
     // examples
