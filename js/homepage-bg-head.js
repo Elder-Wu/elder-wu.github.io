@@ -1,7 +1,6 @@
 // 创建 es-module-shims.js 标签
 const esModuleShimsScript = document.createElement('script');
 esModuleShimsScript.src = 'https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js';
-esModuleShimsScript.async = true;
 
 // 创建 importmap 标签
 const importMapScript = document.createElement('script');
