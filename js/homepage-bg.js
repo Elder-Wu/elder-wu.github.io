@@ -2,7 +2,6 @@ import * as THREE from 'three';
 const headerContainer = document.getElementById("page-header")
 if (headerContainer != null) {
     window.onload = addBg
-    document.addEventListener('DOMContentLoaded', addBg)
 }
 
 function addBg() {
@@ -65,9 +64,16 @@ function addBg() {
         renderer.setSize(window.innerWidth, wndowInnerHeight)
         headerContainer.insertBefore(renderer.domElement, headerContainer.firstChild)
 
-        headerContainer.style.touchAction = 'none'
-        headerContainer.addEventListener('pointermove', onPointerMove)
         window.addEventListener('resize', onWindowResize)
+
+        // 检测设备类型
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // 移动设备
+            headerContainer.addEventListener('ontouchmove', onMouseMove)
+        } else {
+            // 桌面设备
+            headerContainer.addEventListener('onmousemove', onMouseMove)
+        }
     }
 
     function onWindowResize() {
@@ -79,7 +85,7 @@ function addBg() {
         renderer.setSize(window.innerWidth, wndowInnerHeight)
     }
 
-    function onPointerMove(event) {
+    function onMouseMove(event) {
         mouseX = event.clientX - windowHalfX
         mouseY = event.clientY - windowHalfY
     }
