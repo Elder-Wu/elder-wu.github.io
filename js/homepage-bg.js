@@ -72,7 +72,8 @@ function addBg() {
             headerContainer.addEventListener('ontouchmove', onMouseMove)
         } else {
             // 桌面设备
-            headerContainer.addEventListener('onmousemove', onMouseMove)
+            headerContainer.style.touchAction = 'none'
+            headerContainer.addEventListener("pointermove", onMouseMove)
         }
     }
 
