@@ -3508,12 +3508,21 @@ h1.page-title + .tag-cloud-list {
   z-index: 1000;
   width: 50%;
   height: 100%;
-  background-color: var(--preloader-bg);
+  background: -webkit-radial-gradient(49.19% 88.28% at 72.99% 113.54%, rgba(93,227,236,0.73) 0%, rgba(93,227,236,0.168) 59.78%, rgba(93,227,236,0) 100%), -webkit-linear-gradient(35.43deg, #862ab1 8.59%, rgba(185,91,230,0) 80.49%), -webkit-radial-gradient(118.75% 118.75% at 96.65% 74.22%, #308ee6 0%, rgba(48,158,230,0) 73.91%), -webkit-radial-gradient(114.51% 155.86% at 9.82% 10.94%, rgba(255,85,85,0.7) 0%, rgba(255,85,85,0.147) 61.98%, rgba(255,85,85,0) 100%, #f2f5fa);
+  background: -moz-radial-gradient(49.19% 88.28% at 72.99% 113.54%, rgba(93,227,236,0.73) 0%, rgba(93,227,236,0.168) 59.78%, rgba(93,227,236,0) 100%), -moz-linear-gradient(35.43deg, #862ab1 8.59%, rgba(185,91,230,0) 80.49%), -moz-radial-gradient(118.75% 118.75% at 96.65% 74.22%, #308ee6 0%, rgba(48,158,230,0) 73.91%), -moz-radial-gradient(114.51% 155.86% at 9.82% 10.94%, rgba(255,85,85,0.7) 0%, rgba(255,85,85,0.147) 61.98%, rgba(255,85,85,0) 100%, #f2f5fa);
+  background: -o-radial-gradient(49.19% 88.28% at 72.99% 113.54%, rgba(93,227,236,0.73) 0%, rgba(93,227,236,0.168) 59.78%, rgba(93,227,236,0) 100%), -o-linear-gradient(35.43deg, #862ab1 8.59%, rgba(185,91,230,0) 80.49%), -o-radial-gradient(118.75% 118.75% at 96.65% 74.22%, #308ee6 0%, rgba(48,158,230,0) 73.91%), -o-radial-gradient(114.51% 155.86% at 9.82% 10.94%, rgba(255,85,85,0.7) 0%, rgba(255,85,85,0.147) 61.98%, rgba(255,85,85,0) 100%, #f2f5fa);
+  background: -ms-radial-gradient(49.19% 88.28% at 72.99% 113.54%, rgba(93,227,236,0.73) 0%, rgba(93,227,236,0.168) 59.78%, rgba(93,227,236,0) 100%), -ms-linear-gradient(35.43deg, #862ab1 8.59%, rgba(185,91,230,0) 80.49%), -ms-radial-gradient(118.75% 118.75% at 96.65% 74.22%, #308ee6 0%, rgba(48,158,230,0) 73.91%), -ms-radial-gradient(114.51% 155.86% at 9.82% 10.94%, rgba(255,85,85,0.7) 0%, rgba(255,85,85,0.147) 61.98%, rgba(255,85,85,0) 100%, #f2f5fa);
+  background: radial-gradient(49.19% 88.28% at 72.99% 113.54%, rgba(93,227,236,0.73) 0%, rgba(93,227,236,0.168) 59.78%, rgba(93,227,236,0) 100%), linear-gradient(54.57deg, #862ab1 8.59%, rgba(185,91,230,0) 80.49%), radial-gradient(118.75% 118.75% at 96.65% 74.22%, #308ee6 0%, rgba(48,158,230,0) 73.91%), radial-gradient(114.51% 155.86% at 9.82% 10.94%, rgba(255,85,85,0.7) 0%, rgba(255,85,85,0.147) 61.98%, rgba(255,85,85,0) 100%, #f2f5fa);
+  background-blend-mode: hard-light, darken, normal, normal, normal, normal;
+  filter: blur(1px);
 }
 #loading-box .loading-right-bg {
   right: 0;
 }
 #loading-box .spinner-box {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
   position: fixed;
   z-index: 1001;
   display: -webkit-box;
@@ -3577,28 +3586,28 @@ h1.page-title + .tag-cloud-list {
   background-color: var(--preloader-bg);
 }
 #loading-box.loaded .loading-left-bg {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: translate(-100%, 0);
-  -moz-transform: translate(-100%, 0);
-  -o-transform: translate(-100%, 0);
-  -ms-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate(-200%, 0);
+  -moz-transform: translate(-200%, 0);
+  -o-transform: translate(-200%, 0);
+  -ms-transform: translate(-200%, 0);
+  transform: translate(-200%, 0);
 }
 #loading-box.loaded .loading-right-bg {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: translate(100%, 0);
-  -moz-transform: translate(100%, 0);
-  -o-transform: translate(100%, 0);
-  -ms-transform: translate(100%, 0);
-  transform: translate(100%, 0);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate(200%, 0);
+  -moz-transform: translate(200%, 0);
+  -o-transform: translate(200%, 0);
+  -ms-transform: translate(200%, 0);
+  transform: translate(200%, 0);
 }
 #loading-box.loaded .spinner-box {
   display: none;
