@@ -3586,21 +3586,73 @@ h1.page-title + .tag-cloud-list {
   background-color: var(--preloader-bg);
 }
 #loading-box.loaded .loading-left-bg {
-  -webkit-animation: slide-and-fade 1s forwards ease-in-out;
-  -moz-animation: slide-and-fade 1s forwards ease-in-out;
-  -o-animation: slide-and-fade 1s forwards ease-in-out;
-  -ms-animation: slide-and-fade 1s forwards ease-in-out;
-  animation: slide-and-fade 1s forwards ease-in-out;
+  -webkit-animation: slide-and-fade 0.5s forwards;
+  -moz-animation: slide-and-fade 0.5s forwards;
+  -o-animation: slide-and-fade 0.5s forwards;
+  -ms-animation: slide-and-fade 0.5s forwards;
+  animation: slide-and-fade 0.5s forwards;
 }
 #loading-box.loaded .loading-right-bg {
-  -webkit-animation: slide-and-fade 1s forwards ease-in-out;
-  -moz-animation: slide-and-fade 1s forwards ease-in-out;
-  -o-animation: slide-and-fade 1s forwards ease-in-out;
-  -ms-animation: slide-and-fade 1s forwards ease-in-out;
-  animation: slide-and-fade 1s forwards ease-in-out;
+  -webkit-animation: slide-and-fade 0.5s forwards;
+  -moz-animation: slide-and-fade 0.5s forwards;
+  -o-animation: slide-and-fade 0.5s forwards;
+  -ms-animation: slide-and-fade 0.5s forwards;
+  animation: slide-and-fade 0.5s forwards;
 }
 #loading-box.loaded .spinner-box {
-  display: none;
+  -webkit-animation: slide-and-fade 0.5s forwards;
+  -moz-animation: slide-and-fade 0.5s forwards;
+  -o-animation: slide-and-fade 0.5s forwards;
+  -ms-animation: slide-and-fade 0.5s forwards;
+  animation: slide-and-fade 0.5s forwards;
+}
+@-moz-keyframes fade-and-slide {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+}
+@-webkit-keyframes fade-and-slide {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+}
+@-o-keyframes fade-and-slide {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+}
+@keyframes fade-and-slide {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
 }
 @-moz-keyframes slide-and-fade {
   0% {
